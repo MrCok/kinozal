@@ -1,0 +1,149 @@
+.main {margin-bottom: 50px;}
+.new-films {
+  .thumbnail {
+    margin-bottom: 0;
+  }
+
+  .row {
+    margin-right: -$gap / 2;
+    margin-left: -$gap / 2;
+  }
+  &-item {
+    padding-left: $gap / 2;
+    padding-right: $gap / 2;
+    margin-bottom: $gap;
+  }
+}
+.top-week {
+  .thumbnail {
+    margin-bottom: 0;
+  }
+
+  .row {
+    margin-right: -$gap / 2;
+    margin-left: -$gap / 2;
+  }
+  &-item {
+    padding-left: $gap / 2;
+    padding-right: $gap / 2;
+    margin-bottom: $gap;
+  }
+}
+section {
+  position: relative;
+  overflow: hidden;
+}
+ h1 {
+  margin: -7.5px 0 45px;
+  font-family: "PT Serif", serif;
+
+  &:after {
+    position: absolute;
+    width: 100%;
+    margin: 41px 0 0 15px;
+    content: "";
+    border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+  }
+  @include xs-min {
+    font-size: 3rem;
+  }
+
+}
+h2 {
+  margin: 60px 0 45px 45px;
+  font-family: "PT Serif", serif;
+  &:before {
+    position: absolute;
+    left: 0;
+    width: 30px;
+    margin: 10px 0 0 0;
+    content: "";
+    border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+  }
+  &:after {
+    position: absolute;
+    width: 100%;
+    margin: 34px 0 0 15px;
+    content: "";
+    border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+  }
+  @include xs-min {
+    font-size: 2.5rem;
+  }
+}
+.new-films-item:hover .thumbnail,
+.top-week-item:hover .thumbnail
+ {
+  border-color: #df8a13;
+  background-color: #df8a13;
+}
+.new-films-item:hover h3,
+.top-week-item:hover h3
+{
+  color: #fff;
+}
+.new-films-item .thumbnail,
+.top-week-item .thumbnail
+{
+  transition: 0.5s;
+}
+.new-films-item h3,
+.top-week-item h3
+{
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+.new-films-item .caption,
+.top-week-item .caption
+{
+  text-align: center;
+}
+.film-news-item {
+  margin: 0;
+}
+.film-news-item .btn {
+  float: right;
+  margin-bottom: 30px;
+  transition: 0.25s ease;
+}
+.film-news-item__text {
+  text-align: justify;
+}
+.film-news-item:hover h3 a {
+  color: #df8a13;
+}
+.film-news-item:hover .thumbnail {
+  background-color: #f0ad4f;
+}
+.film-news-item:hover .btn {
+  background-color: #df8a13;
+}
+.film-news-item h3 a {
+  transition: 0.25s ease;
+}
+.film-news-item .thumbnail {
+  transition: 0.25s ease;
+}
+footer {
+  padding: 45px 0 0;
+  color: #fbfbfb;
+  background-color: #232323;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+footer ul a {
+  color: #777777;
+}
+footer ul a:hover {
+  color: #ffffff;
+}
+.copyright {
+  text-align: center;
+  margin: 20px auto;
+}
+.copyright a {
+  color: #ffffff;
+}

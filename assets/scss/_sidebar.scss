@@ -1,0 +1,127 @@
+.vertical-slider {
+  border-radius: 4px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+  }
+}
+
+.top-films {
+  .panel-body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .list-group {
+    margin-bottom: 0;
+  }
+
+  .badge {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+  }
+
+  &-item {
+    padding: 0;
+    background-color: transparent;
+    border-top: 1px solid $color-gray;
+    border-right: none;
+    border-left: none;
+    margin-left: -1px;
+    margin-right: -1px;
+
+    a {
+      display: block;
+      padding: 10px 40px 10px $gap;
+    }
+
+    &:first-child {
+      border-top: none;
+      border-radius: 0;
+    }
+
+    &:last-child {
+      border-bottom: none;
+      border-radius: 0;
+    }
+
+    &:hover {
+      background-color: $color-accent;
+
+      a {
+        color: $color-light;
+      }
+
+      .badge {
+        background-color: $color-dark;
+      }
+    }
+  }
+}
+.list-group-item:nth-child(5) {
+  border: transparent;
+}
+.list-group-item:nth-child(7) {
+  border: transparent;
+}
+.list-group-item:nth-child(9) {
+  border: transparent;
+}
+.site-news-item {
+  min-height: 85px;
+  margin-bottom: 15px;
+  position: relative;
+
+    &__date {
+      text-align: right;
+      color: #909090;
+      font-size: 0.8rem;
+    }
+    &__image {
+      float: left;
+      width: 75px;
+      margin: 0 10px 10px 0;
+      transition: 0.25s ease;
+    }
+    &__title {
+      margin-bottom: 10px;
+
+      a {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        height: 50px;
+        transition: color 0.25s ease;
+        line-height: 1.5rem;
+        color: #165690;
+        transition: 0.25s ease;
+      }
+    }
+}
+.site-news-item:last-child {
+  margin-bottom: 0;
+}
+.site-news-item:after {
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  width: calc(100% - 85px);
+  height: 1px;
+  content: "";
+  background-color: #dddddd;
+}
+.site-news-item:last-child::after {
+  position: relative;
+}
+.site-news-item:hover .site-news-item__title a {
+  color: #df8a13;
+}
+
+.site-news-item:hover .site-news-item__image {
+  border-color: #df8a13;
+  background-color: #df8a13;
+}
