@@ -125,3 +125,8 @@
   border-color: #df8a13;
   background-color: #df8a13;
 }
+.left-sidebar {
+  @include md {
+    margin-bottom: 45px;
+  }
+}
