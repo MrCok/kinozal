@@ -130,3 +130,8 @@
     margin-bottom: 60px;
   }
 }
+main.site-search {
+  @include sm {
+    margin: -15px 0 45px;
+  }
+}
