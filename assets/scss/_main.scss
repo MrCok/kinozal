@@ -166,3 +166,8 @@ article .col-xs-6 {
     width: 100%;
   }
 }
+.film-news img {
+  @include sm {
+    width: 100%;
+  }
+}

@@ -326,6 +326,12 @@ footer ul a:hover {
   }
 }
 
+@media (max-width: 767.8px) {
+  .film-news img {
+    width: 100%;
+  }
+}
+
 .film-review__badge {
   font-size: 0.8em;
   margin-right: 3%;
