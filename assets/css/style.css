@@ -139,6 +139,11 @@ a:hover, a:focus {
 .main {
   margin-bottom: 50px;
 }
+@media (min-width: 1200px) {
+  .main {
+    margin-bottom: 60px;
+  }
+}
 
 .new-films .thumbnail {
   margin-bottom: 0;
