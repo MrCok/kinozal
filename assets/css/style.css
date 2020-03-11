@@ -308,6 +308,24 @@ footer ul a:hover {
   color: #ffffff;
 }
 
+@media (max-width: 767.8px) {
+  article .col-xs-6 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767.8px) {
+  .new-films img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767.8px) {
+  .top-week img {
+    width: 100%;
+  }
+}
+
 .film-review__badge {
   font-size: 0.8em;
   margin-right: 3%;
@@ -463,7 +481,13 @@ footer ul a:hover {
 }
 
 @media (max-width: 767.8px) {
-  main.site-search {
+  .site-search {
     margin: -15px 0 45px;
+  }
+}
+
+@media (max-width: 767.8px) {
+  .user-login {
+    margin-bottom: 60px;
   }
 }

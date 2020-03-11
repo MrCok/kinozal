@@ -151,3 +151,18 @@ footer ul a:hover {
 .copyright a {
   color: #ffffff;
 }
+article .col-xs-6 {
+  @include sm {
+    width: 50%;
+  }
+}
+.new-films img {
+  @include sm {
+    width: 100%;
+  }
+}
+.top-week img {
+  @include sm {
+    width: 100%;
+  }
+}
