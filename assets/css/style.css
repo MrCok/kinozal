@@ -358,6 +358,10 @@ footer ul a:hover {
   margin-bottom: 60px;
 }
 
+.embed-responsive {
+  border-radius: 4px 4px 0 0;
+}
+
 .vertical-slider {
   border-radius: 4px;
   overflow: hidden;
